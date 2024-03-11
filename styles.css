@@ -1,0 +1,41 @@
+#nombre {
+    font-family: Copperplate;
+    color:midnightblue;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+
+#skills-table {
+    font-family: Copperplate;
+    border: 2px solid black;
+    margin-top:1% ;
+    border-collapse: collapse;
+    width: 15%;
+    text-align: left; 
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    th {
+        border: 2px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+}
+
+#skills-table .gray-background {
+    background-color: lightgray;
+}
+
+#skills-table .title {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+
+
