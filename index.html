@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Personal Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+      function updateSection() {
+        var inputValue = document.getElementById('inputField').value;
+        document.getElementById('output').textContent = inputValue;
+      }
+      </script>
 </head>
 <body>
     <h1 id="nombre" class="underlined">Javier De Bernardi</h1>
@@ -11,7 +17,9 @@
     <h2>Enrolled in 2021</h2>
     <a class="link" href="https://github.com/Xavi-797">My Github</a>
     <h3 class="underlined">Personal summary:</h3>
-    <p> Personal summary</p>
+    <p>I am Javier De Bernardi an industrial engineering student from Universidad de los andes, this summer I
+    <br>worked in my pre-professional practice in a company named Vendomatica this summer. Im in my fourth 
+    <br>year of studies, and I like a lot my major.</p>
 
     <table id="skills-table">
         <tr class="title">
@@ -19,44 +27,48 @@
             <th>Level</th>
         </tr>
         <tr>
-            <td>skill 1</td>
-            <td>nivel</td>
+            <td>Python</td>
+            <td>Advanced</td>
         </tr>
         <tr class="gray-background">
-            <td>skill 2</td>
-            <td>nivel</td>
+            <td>Java Script</td>
+            <td>Basic</td>
         </tr>
         <tr>
-            <td>skill 3</td>
-            <td>nivel</td>
+            <td>HTML/CSS</td>
+            <td>Basic</td>
           </tr>
           <tr class="gray-background">
-            <td>skill 4</td>
-            <td>nivel</td>
+            <td>Excel</td>
+            <td>Advanced</td>
           </tr>
           <tr>
-            <td>skill 5</td>
-            <td>nivel</td>
+            <td>SQL</td>
+            <td>Advanced</td>
           </tr>
           <tr class="gray-background">
-            <td>skill 6</td>
-            <td>nivel</td>
+            <td>Salesforce</td>
+            <td>Advanced</td>
           </tr>
           <tr>
-            <td>skill 7</td>
-            <td>nivel</td>
+            <td>Spanish</td>
+            <td>Native</td>
           </tr>
           <tr class="gray-background">
-            <td>skill 8</td>
-            <td>nivel</td>
+            <td>English</td>
+            <td>Advanced</td>
           </tr>
-          <tr>
-            <td>skill 9</td>
-            <td>nivel</td>
-          </tr>
-      </table>
+    </table>
 
+    <p>     </p>
+
+    <input type="text" id="inputField" placeholder="Enter Text">
+    <button onclick="updateSection()" class="button">Update Section</button>
+    
+    <div id="output">This section will be updated.</div>
 
 
 </body>
 </html>
+
+
